@@ -52,6 +52,11 @@
             width: 250px;
             padding-right: 15px;
         }
+        @media only screen and (max-width: 400px) {
+            .nomes{
+                width: 200px;
+            }
+        }
         .custom-gutter > [class*='col-'] {
             padding-right:1px;
             padding-left:1px; 
@@ -174,6 +179,42 @@
             </div>
         </div>
 
+        <!-- Linha 2 -->
+        <div class="row justify-content-md-center custom-gutter">
+            <!-- Andressa -->
+            <div class="col col-lg-5">
+                <button type="button" class="btn btn-white" data-toggle="modal" data-target="#ModalAndressa">
+                    <div class="alinha">
+                    <div>
+                        <img src="./imgs/andressa.jpg" alt="Foto Andressa" width="100" class="foto foto-hover"> 
+                    </div>
+                    <div class="nomes">
+                        <h2>Andressa da Silva Siqueira</h2>
+                        <i>Redes Sociais</i>
+                    </div>
+                </div>
+                </button>
+            </div>
+            <!-- "Coluna para posicionamento no centro (não mexer)" -->
+            <div class="col-md-auto"></div>
+            <!--  -->
+            <div class="col col-lg-5">
+                <!--
+                <button type="button" class="btn btn-white" data-toggle="modal" data-target="#ModalFernanda">
+                    <div class="alinha">
+                    <div>
+                        <img src="./imgs/fernanda.jpeg" alt="Foto Fernanda" width="100" class="foto foto-hover"> 
+                    </div>
+                    <div class="nomes">
+                        <h2>Maria Fernanda Souza</h2>
+                        <i>Conteúdo</i>
+                    </div>
+                </div>
+                </button>
+                -->
+            </div>
+        </div>
+
         <!-- Para adicionar uma nova pessoa, copiar a div de linha, modificar as informações data-target, 
         img src (colocar a imagem na pasta de imagens), alt, h2 e i e criar um modal para ela com id igual 
         ao data-target. OBS.: Quando for a última linha e só tiver uma pessoa nela, manter o 
@@ -290,6 +331,63 @@
                 </div>
                 <div>
                     <h2>Maria Fernanda Souza</h2> 
+                    <i>Conteúdo</i>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Recifense, mãe de gatinhas e futura cientista da computação pela UFRPE. Faço parte de algumas comunidades de tecnologia e de Python, sempre tentando trazer mais mulheres para a área. 
+                    Sou professora de programação, além de trabalhar como engenheira de dados.</p>
+                
+                <a href="mfsouza.com">Contato da Coordenadora :)</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal Andressa -->
+    <div class="modal fade" id="ModalAndressa" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <img src="./imgs/andressa.jpg" alt="Foto Andressa" width="60" class="foto">
+                </div>
+                <div>
+                    <h2><!-- Modal Fernanda -->
+    <div class="modal fade" id="ModalFernanda" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <img src="./imgs/fernanda.jpeg" alt="Foto Fernanda" width="60" class="foto">
+                </div>
+                <div>
+                    <h2>Andressa da Silva Siqueira</h2> 
+                    <i>Redes Sociais</i>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Mestre em Sistema e Computação pelo Instituto Militar de Engenharia e graduada no curso de Engenharia Elétrica com ênfase em Sistema e Computação pela Universidade do Estado do Rio de Janeiro.
+                </p><p>
+                    Atuo na área tecnológica desde 2007, e estou me especializando na área de Data Science e IA</p>
+                
+                <a href="https://www.linkedin.com/in/andressasiqueira/">Contato da Coordenadora :)</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+        </div>
+    </div></h2> 
                     <i>Conteúdo</i>
                 </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
