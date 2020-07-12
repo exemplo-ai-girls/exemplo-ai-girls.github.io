@@ -46,6 +46,12 @@
             justify-content: center; 
             align-items: center;
         }
+        .nomes{
+            justify-content: start;
+            flex: 1;
+            width: 250px;
+            padding-right: 15px;
+        }
         .custom-gutter > [class*='col-'] {
             padding-right:1px;
             padding-left:1px; 
@@ -62,6 +68,7 @@
         #texto-inicial{
             padding-top:10px;
             padding-bottom: 10px;
+            font-size: 18px;
         }   
     </style>
     
@@ -108,7 +115,7 @@
                     <div>
                         <img src="./imgs/poliana.png" alt="Foto Poliana" width="100" class="foto foto-hover"> 
                     </div>
-                    <div>
+                    <div class="nomes">
                         <h2>Poliana Nascimento Ferreira</h2>
                         <i>Eventos</i>
                     </div>
@@ -124,9 +131,43 @@
                     <div>
                         <img src="./imgs/laura.jpeg" alt="Foto Laura" width="100" class="foto foto-hover"> 
                     </div>
-                    <div>
+                    <div class="nomes">
                         <h2>Laura Damaceno de Almeida</h2>
                         <i>Eventos e Conteúdo</i>
+                    </div>
+                </div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Linha 2 -->
+        <div class="row justify-content-md-center custom-gutter">
+            <!-- Luiza -->
+            <div class="col col-lg-5">
+                <button type="button" class="btn btn-white" data-toggle="modal" data-target="#ModalLuiza">
+                    <div class="alinha">
+                    <div>
+                        <img src="./imgs/luiza.png" alt="Foto Luiza" width="100" class="foto foto-hover"> 
+                    </div>
+                    <div class="nomes">
+                        <h2>Luíza Bizoni</h2>
+                        <i>Design</i>
+                    </div>
+                </div>
+                </button>
+            </div>
+            <!-- "Coluna para posicionamento no centro (não mexer)" -->
+            <div class="col-md-auto"></div>
+            <!-- Fernanda -->
+            <div class="col col-lg-5">
+                <button type="button" class="btn btn-white" data-toggle="modal" data-target="#ModalFernanda">
+                    <div class="alinha">
+                    <div>
+                        <img src="./imgs/fernanda.jpeg" alt="Foto Fernanda" width="100" class="foto foto-hover"> 
+                    </div>
+                    <div class="nomes">
+                        <h2>Maria Fernanda Souza</h2>
+                        <i>Conteúdo</i>
                     </div>
                 </div>
                 </button>
@@ -143,7 +184,7 @@
 
     <footer>
         <div class="fixed-bottom footer bg-light">
-            © 2020 Copyright AI Girls
+            © 2020 AI Girls
         </div>
     </footer>
     
@@ -200,6 +241,66 @@
                 <p>Adoro ler, conversar sobre séries e participar de comunidades que visam a equidade na área de tecnologia.
                     </p>
                 <a href="https://www.linkedin.com/in/laura-damaceno/">Contato da Coordenadora :)</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal Luiza -->
+    <div class="modal fade" id="ModalLuiza" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <img src="./imgs/luiza.png" alt="Foto Luiza" width="60" class="foto">
+                </div>
+                <div>
+                    <h2>Luíza Bizoni</h2> 
+                    <i>Design</i>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Pesquisa e comunicação visual são minhas paixões e 
+                    consegui uni-las utilizando meus conhecimentos em Data Science e Design Gráfico.</p>
+                <p>Atualmente trabalho como Cientista de Dados e Designer e sou graduanda em Ciências Econômicas e 
+                    Análise e Desenvolvimento de Sistemas.</p>
+                <p>Encontrei nas comunidades um espaço de equidade, inclusão e diversidade onde é possível aprender e compartilhar conhecimentos para crescer e evoluir pessoal e profissionalmente.</p>
+                <a href="https://www.linkedin.com/in/bizoniluiza/">Contato da Coordenadora :)</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal Fernanda -->
+    <div class="modal fade" id="ModalFernanda" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <img src="./imgs/fernanda.jpeg" alt="Foto Fernanda" width="60" class="foto">
+                </div>
+                <div>
+                    <h2>Maria Fernanda Souza</h2> 
+                    <i>Conteúdo</i>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Recifense, mãe de gatinhas e futura cientista da computação pela UFRPE. Faço parte de algumas comunidades de tecnologia e de Python, sempre tentando trazer mais mulheres para a área. 
+                    Sou professora de programação, além de trabalhar como engenheira de dados.</p>
+                
+                <a href="mfsouza.com">Contato da Coordenadora :)</a>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
