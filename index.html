@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
+    <meta name="author" content="Poliana N Ferreira">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -18,20 +19,34 @@
             font-size: larger;
         }
         img{
-            margin-right: 10px;
+            margin-right: 15px;
+        }
+        main{
+            margin-top:100px;
+            margin-bottom:100px;
         }
         p{
             text-align: justify;
         }
 
         .alinha{
-            display: flex; justify-content: center; align-items: center;
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
         }
         .custom-gutter > [class*='col-'] {
             padding-right:1px;
             padding-left:1px; 
             padding-top: 10px;
         } 
+        .footer {
+            height: auto;
+            margin: auto;
+            text-align:center;
+            padding:10px;
+            color:gray;
+            box-shadow: 0 -5px 5px -5px lightgray;
+        }
 
         #texto-inicial{
             padding-top:10px;
@@ -46,26 +61,28 @@
 <body>
 
     <!---------------- Navegação ------------------>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                    <img src="./imgs/logo.png" alt="Logo Ai Girls" width="150">
-                </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Coordenadoras</a>
-                </li>
-                </ul>
+    <header>
+        <nav class="navbar shadow-sm navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                        <img src="./imgs/logo.png" alt="Logo Ai Girls" width="150">
+                    </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Coordenadoras</a>
+                    </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!---------------- Página ------------------>
-    <div class="container">
+    <main role="main" class="container">
         <!---------------- Título e texto ------------------>
         <h1 class="mt-4 h1-cor">Coordenadoras da Comunidade</h1><hr>
         <p id="texto-inicial">O nosso sincero agradecimento a essas mulheres maravilhosas que tocam as iniciativas e os eventos da comunidade Ai Girls com o intuito de trazer o melhor conteúdo e estimular cada vez mais mulheres a entrarem na área de Inteligência Artificial e Ciência de Dados!</p>
@@ -78,7 +95,7 @@
                 <button type="button" class="btn btn-white" data-toggle="modal" data-target="#ModalPoliana">
                     <div class="alinha">
                     <div>
-                        <img src="./imgs/poliana.png" alt="Foto Poliana" width="130"> 
+                        <img src="./imgs/poliana.png" alt="Foto Poliana" width="130" > 
                     </div>
                     <div>
                         <h2>Poliana Nascimento Ferreira</h2>
@@ -111,7 +128,14 @@
         <div class="col col-lg-5"></div> do final, mas vazio, dai quando for colocar alguém, é só copiar
         as coisas que deveriam ficar ali de algum de cima :)-->
 
-    </div>
+    </main>
+
+    <footer>
+        <div class="fixed-bottom footer bg-light">
+            © 2020 Copyright AI Girls
+        </div>
+    </footer>
+    
 
     <!---------------- Modais ------------------>
     <!-- Modal Poliana -->
